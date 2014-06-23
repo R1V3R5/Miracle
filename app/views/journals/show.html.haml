@@ -1,0 +1,6 @@
+%h1 
+  #{@journal.title}
+%h5
+  = link_to "Back", journals_path
+%hr
+= @journal.content.html_safe

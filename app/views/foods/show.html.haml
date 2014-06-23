@@ -1,0 +1,14 @@
+%h1 #{@food.created_at.try(:strftime, "%m-%d-%Y")}
+= link_to "Back", foods_path
+\|   
+= link_to "Delete", food_path(@food), method: :delete
+%hr
+%ul
+  %li
+    Food:
+    = @food.meal
+  %li
+    Drink:   
+    = @food.drink
+
+  %br

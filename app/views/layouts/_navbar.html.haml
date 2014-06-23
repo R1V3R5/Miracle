@@ -1,0 +1,39 @@
+.navbar{:role => "navigation"}
+  .navbar-header
+    %button.navbar-toggle{"data-target" => "#rebound-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+    %a.navbar-brand{:href => "/"} My Miracle
+  #rebound-navbar-collapse.collapse.navbar-collapse
+    %ul.nav.navbar-nav
+      %li
+        = link_to "Home", root_path
+      %li
+        = link_to "Appointments", appointments_path
+      %li
+        = link_to "Food Diary", foods_path
+      %li
+        = link_to "Journal", journals_path
+      %li
+        = link_to "Milestones", milestones_path
+      %li
+        = link_to "Photos", photos_path
+      %li
+        = link_to "Weight Tracker", weights_path
+      %li
+        = link_to "Forums", forums_path
+      .navbar-collapse
+      %li
+        - if current_user
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown"}
+              #{current_user.name}
+              %b.caret
+            %ul.dropdown-menu  
+              / %li.menu
+              /   = link_to "Profile", edit_user_registration_path
+              %li.menu
+                = link_to "Logout", destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to "Register", new_user_registration_path
+          %li
+            = link_to "Login", new_user_session_path

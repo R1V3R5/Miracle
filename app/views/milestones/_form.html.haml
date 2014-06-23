@@ -1,0 +1,6 @@
+.pageheader
+  = simple_form_for @milestone do |f|
+    .form-inputs
+      = f.text_field :title, placeholder: 'TITLE', style: "width:300px;"
+    .form-actions
+      = f.submit

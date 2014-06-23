@@ -1,0 +1,29 @@
+/*!
+ * jQuery UI CSS Framework 1.10.4
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *= require jquery.ui.core.css
+ *= require jquery.ui.base.css
+ *= require jquery-ui.css
+ *= require jquery.ui.theme.css
+ *= require jquery.ui.tooltip.css
+ *= require jquery.ui.datepicker.css
+ *= require jquery.ui.autocomplete.css
+ *= requrire jquery.ui.menu.css
+ *= require jquery.ui.accordion.css
+ *= require jquery.ui.autocomplete.css
+ *= require jquery.ui.button.css
+ *= require jquery.ui.datepicker.css
+ *= require jquery.ui.dialog.css
+ *= require jquery.ui.progressbar.css
+ *= require jquery.ui.resizable.css
+ *= require jquery.ui.selectable.css
+ *= require jquery.ui.slider.css
+ *= require jquery.ui.spinner.css
+ *= require jquery.ui.tabs.css
+ */

@@ -1,0 +1,44 @@
+// Place all the styles related to the Appointments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#appointment_title {
+  width: 200px;
+  margin-left: 40px;
+}
+#appointment_date {
+  width: 200px;
+  margin-left: 36px; 
+}
+#appointment_address {
+  width: 200px;
+  margin-left: 13px; 
+}
+#appointment_city {
+  width: 200px;
+  margin-left: 44px; 
+}
+#appointment_state {
+  width: 200px;
+  margin-left: 35px; 
+}
+#appointment_zip {
+  width: 200px;
+  margin-left: 47px; 
+}
+#appointment_phone {
+  width: 200px;
+  margin-left: 26px; 
+}
+#map {
+  margin-left: 165px;
+  margin-top: 20px;
+}
+.mapcontainer {
+  margin-left: 175px; 
+}
+.maphead {
+  margin-left: 70px;
+}
+.apptform {
+  margin-left: 300px;
+}

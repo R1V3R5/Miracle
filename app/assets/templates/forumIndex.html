@@ -1,0 +1,20 @@
+<div class="pageheader">
+  <div>
+    <h1 class="text-center">{{title}}</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <input class="form-control" id="srch-term" ng-model="searchText" placeholder="Search Forums" type="text" style="width:300px">
+      <form name="myForm" class="my-form" ng-submit="forumData.newForumName" >
+        <input class="form-control"name="input" ng-model="formData.newForumName" placeholder="New Forum!"style="width:300px">    
+        <button popover="Create New Forum" popover-trigger="mouseenter" class="btn btn-success btn" ng-click="createForum()" ng-model= "forumData.newForumName" >Create</button>
+      </form>
+    </div>
+  <hr>
+  <div class="row"ng-repeat="forum in data.forums | filter:searchText" style="margin-left:5px;">
+     <div  class="col-md-9">
+      <p><a ng-click="viewForum(forum.id)">{{ forum.name }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

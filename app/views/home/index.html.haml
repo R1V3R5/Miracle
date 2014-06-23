@@ -1,0 +1,504 @@
+.space-40
+%h2 Tabbable Tabs
+.tabbable
+  %ul#myTab.nav.nav-tabs
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#home"} Home
+    %li
+      %a{"data-toggle" => "tab", :href => "#profile"} Tab1
+    %li.dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#none"}
+        Tab2
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          %a{"data-toggle" => "tab", :href => "#dropdown1"} @icont
+        %li
+          %a{"data-toggle" => "tab", :href => "#dropdown2"} @mdo
+  #myTabContent.tab-content
+    #home.tab-pane.iconde.in.active
+      %p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+    / end tab-pane
+    #profile.tab-pane.iconde
+      %p Food truck fixie locavore, accusamus mcsweeney's maricon nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko iconrm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan iconnny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+    / end tab-pane
+    #dropdown1.tab-pane.iconde
+      %p Etsy mixtape wayiconrers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro iconnny pack lo-fi iconrm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+    / end tab-pane
+    #dropdown2.tab-pane.iconde
+      %p Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. iconnny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out iconrm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade Zioncats keffiyeh craft beer maricon ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+    / end tab-pane
+  / end tab-content
+/ end tabbable
+.space-40
+%h2 Accordion
+#accordion.panel-group
+  .panel.panel-default
+    .panel-heading
+      %a.panel-toggle{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+        Collapsible Group Item #1
+    / end panel-heading
+    #collapseOne.panel-collapse.collapse.in{:style => "height: auto;"}
+      .panel-body
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      / end panel-body
+    / end panel-collapse
+  / end panel
+  .panel.panel-default
+    .panel-heading
+      %a.panel-toggle.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+        Collapsible Group Item #2
+    / end panel-heading
+    #collapseTwo.panel-collapse.collapse
+      .panel-body
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      / end panel-body
+    / end panel-collapse
+  / end panel
+  .panel.panel-default
+    .panel-heading
+      %a.panel-toggle.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+        Collapsible Group Item #3
+    #collapseThree.panel-collapse.collapse
+      .panel-body
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+.space-40
+%h2 Media List
+%ul.media-list
+  %li.media
+    %a.pull-left{:href => "javascript:void(0)"}
+      %img.media-object{:alt => "64x64", "data-src" => "holder.js/64x64", :src => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII="}
+    .media-body
+      %h4.media-heading Media heading
+      %p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      / Nested media object
+      .media
+        %a.pull-left{:href => "javascript:void(0)"}
+          %img.media-object{:alt => "64x64", "data-src" => "holder.js/64x64", :src => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII="}
+        .media-body
+          %h4.media-heading Nested media heading
+          %p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          / Nested media object
+          .media
+            %a.pull-left{:href => "javascript:void(0)"}
+              %img.media-object{:alt => "64x64", "data-src" => "holder.js/64x64", :src => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII="}
+            .media-body
+              %h4.media-heading Nested media heading
+              %p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            / end media-body
+          / end media
+        / end media-body
+      / end media
+      / Nested media object
+      .media
+        %a.pull-left{:href => "javascript:void(0)"}
+          %img.media-object{:alt => "64x64", "data-src" => "holder.js/64x64", :src => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII="}
+        .media-body
+          %h4.media-heading Nested media heading
+          %p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+        / end media-body
+      / end media
+    / end media-body
+  %li.media
+    %a.pull-right{:href => "javascript:void(0)"}
+      %img.media-object{:alt => "64x64", "data-src" => "holder.js/64x64", :src => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACsUlEQVR4Xu2Y24upYRTGl0PI0JSimHDjMIVETVMzpvzrziLSTIkiLpTcjJLzcfaziuz2Njufsb8La93o+3jX+65nHX55NZ+fnzu6YdOIAFIB0gIyA254BpIMQaGAUEAoIBQQCtywAoJBwaBgUDAoGLxhCMifIcGgYFAwKBgUDAoGb1iBizHYbDap3+/Tbrcjp9NJwWCQNBrNQdJflKF6vU5ms5lisdhv353S/Ro+T+11kQCNRoN6vR7p9Xr2v16vyev1kt/v52eIkkql+L3BYKBEIkFarfbberuGz+82VCzAZrOhdDrNGX17e6PVakXdbpesVis9PDzwnq1Wi9/BTCYTvb6+0mQyoff3d9LpdBSPx2k8HhOCNhqNFIlEKJvNnu3zuOLO7WbFAiyXSz7sdrvloOfzObdAIBDgM8xmM8rlcuTxeGg0GtF0OmWhcNhKpULD4ZBsNhuvw3eoGqxX6vPcwPe/VywAertarbIftADKHIYgQqEQB4nAk8kklUolWiwWBwGOxcOa+/t7enp6okt8/ncBkOF8Ps+l+/LywlksFovc6+FwmMW5u7sjt9tN7XabK8Xn8/EzrNPp8HvY8/MzV9GlPpWIoLgCkHHMAPQ2BNg/Q4DHx0eq1Wp/nAcDEBWB4ZjJZA5VY7fbKRqNHnwo8fmv4XpKHMUCIAhUALLmcrn4E33tcDi4AlDmMBysXC5zcMg0gvv4+KDBYEAWi4UrB9WBAYi1Sn0qyT7WKBYAizHACoUCgQgwtAN6GUEeG1oDAoACmAsQZE8PCAHuY47saXKuT1UocBwgUAZDRn/KruHzb2e7qAJ+Klg1/YgAciMkN0JyIyQ3QmpOYbX3FgoIBYQCQgGhgNqTWM39hQJCAaGAUEAooOYUVntvoYBQQCggFBAKqD2J1dxfKHDrFPgCDLCNn09hb34AAAAASUVORK5CYII="}
+    .media-body
+      %h4.media-heading Media heading
+      %p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+    / end media-body
+.space-40
+%h2 Alerts
+.alert
+  %button.close{"data-dismiss" => "alert", :type => "button"} &times;
+  %strong Warning!
+  Best check yo self, you're not looking too good.
+/ end alert
+.alert.alert-error
+  %button.close{"data-dismiss" => "alert", :type => "button"} ×
+  %strong Oh snap!
+  Change a few things up and try submitting again.
+/ end alert
+.alert.alert-success
+  %button.close{"data-dismiss" => "alert", :type => "button"} ×
+  %strong Well done!
+  You successfully read this important alert message.
+/ end alert
+.alert.alert-info
+  %button.close{"data-dismiss" => "alert", :type => "button"} ×
+  %strong Heads up!
+  This alert needs your attention, but it's not super important.
+.space-40
+%h2 Labels &amp; Badges
+%p
+  %span.label.label-default default
+  %span.label.label-success Success
+  %span.label.label-warning Warning
+  %span.label.label-danger Danger
+  %span.label.label-info Info
+  %span.label.label-inverse Inverse
+%p
+  %span.label.label-medium.label-default default
+  %span.label.label-medium.label-success Success
+  %span.label.label-medium.label-warning Warning
+  %span.label.label-medium.label-danger Danger
+  %span.label.label-medium.label-info Info
+  %span.label.label-medium.label-inverse Inverse
+%p
+  %span.label.label-large.label-default default
+  %span.label.label-large.label-success Success
+  %span.label.label-large.label-warning Warning
+  %span.label.label-large.label-danger Danger
+  %span.label.label-large.label-info Info
+  %span.label.label-large.label-inverse Inverse
+%p
+  %span.badge 1
+  %span.badge.badge-success 2
+  %span.badge.badge-warning 4
+  %span.badge.badge-important 6
+  %span.badge.badge-info 8
+  %span.badge.badge-inverse 10
+.space-40
+%h2 Modal
+/ Button to trigger modal
+%a.btn.btn-default{"data-toggle" => "modal", :href => "#myModal", :role => "button"} Launch demo modal
+/ Modal
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        %h4#myModalLabel.modal-title Modal title
+      .modal-body
+        %p This is where I might use a modal message to alert and/or notice user messages and auto hide back into the DOM
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+.space-40
+%h2 Panels
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title Panel title
+  .panel-body
+    Panel content
+.panel.panel-primary
+  .panel-heading
+    %h3.panel-title Panel title
+  .panel-body
+    Panel content
+.panel.panel-success
+  .panel-heading
+    %h3.panel-title Panel title
+  / end panel-heading
+  .panel-body
+    Panel content
+  / end panel-body
+/ end panel
+.panel.panel-info
+  .panel-heading
+    %h3.panel-title Panel title
+  / end panel-heading
+  .panel-body
+    Panel content
+  / end panel-body
+/ end panel
+.panel.panel-warning
+  .panel-heading
+    %h3.panel-title Panel title
+  / end panel-heading
+  .panel-body
+    Panel content
+  / end panel-body
+/ end panel
+.panel.panel-danger
+  .panel-heading
+    %h3.panel-title Panel title
+  / end panel-heading
+  .panel-body
+    Panel content
+  / end panel-body
+/ end panel
+.space-40
+%h2 List Groups
+%ul.list-group
+  %li.list-group-item Cras justo odio
+  %li.list-group-item Dapibus ac facilisis in
+  %li.list-group-item Morbi leo risus
+  %li.list-group-item Porta ac consectetur ac
+  %li.list-group-item Vestibulum at eros
+.list-group
+  %a.list-group-item.active{:href => "javascript:void(0)"}
+    Cras justo odio
+  %a.list-group-item{:href => "javascript:void(0)"} Dapibus ac facilisis in
+  %a.list-group-item{:href => "javascript:void(0)"} Morbi leo risus
+  %a.list-group-item{:href => "javascript:void(0)"} Porta ac consectetur ac
+  %a.list-group-item{:href => "javascript:void(0)"} Vestibulum at eros
+.list-group
+  %a.list-group-item.active{:href => "javascript:void(0)"}
+    %h4.list-group-item-heading List group item heading
+    %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+  %a.list-group-item{:href => "javascript:void(0)"}
+    %h4.list-group-item-heading List group item heading
+    %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+  %a.list-group-item{:href => "javascript:void(0)"}
+    %h4.list-group-item-heading List group item heading
+    %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+/ end list-group
+.space-40
+%h2 Wells
+.well
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+.space-40
+%h2 Button Group
+.btn-toolbar
+  .btn-group
+    %button.btn.btn-warning.dropdown-toggle{"data-toggle" => "dropdown"}
+      Warning
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-success.btn-lg.dropdown-toggle{"data-toggle" => "dropdown"}
+      Success large
+      %i.fa.fa-angle-down.fa-on-right
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-info.btn-sm.dropdown-toggle{"data-toggle" => "dropdown"}
+      Info small
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-inverse.btn-xs.dropdown-toggle{"data-toggle" => "dropdown"}
+      Inverse mini
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+/ end btn-toolbar
+.btn-toolbar
+  .btn-group
+    %button.btn.btn-default Action
+    %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-sm.btn-primary Some Action
+    %button.btn.btn-sm.btn-primary.dropdown-toggle{"data-toggle" => "dropdown"}
+      %i.fa.fa-angle-down
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group.dropup
+    %button.btn.btn-xs.btn-danger Danger
+    %button.btn.btn-xs.btn-danger.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group.dropdown
+    %button.btn.btn-xs.btn-purple Purple
+    %button.btn.btn-xs.btn-purple.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-lg.btn-warning Warning
+    %button.btn.btn-lg.btn-warning.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-success Success
+    %button.btn.btn-success.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-info Info
+    %button.btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+  .btn-group
+    %button.btn.btn-inverse Inverse
+    %button.btn.btn-inverse.dropdown-toggle{"data-toggle" => "dropdown"}
+      %span.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "javascript:void(0)"} Action
+      %li
+        %a{:href => "javascript:void(0)"} Another action
+      %li
+        %a{:href => "javascript:void(0)"} Something else here
+      %li.divider
+      %li
+        %a{:href => "javascript:void(0)"} Separated link
+  / end btn-group
+/ end btn-toolbar
+.btn-toolbar
+  .btn-group.btn-group-vertical
+    %button.btn.btn-light{:type => "button"}
+      %i.fa.fa-only.fa-align-left
+    %button.btn.btn-light{:type => "button"}
+      %i.fa.fa-only.fa-align-center
+    %button.btn.btn-light{:type => "button"}
+      %i.fa.fa-only.fa-align-right
+    %button.btn.btn-light{:type => "button"}
+      %i.fa.fa-only.fa-align-justify
+  / end btn-group
+  .btn-group{"data-toggle" => "buttons-radio"}
+    %button.btn.btn-grey{:type => "button"}
+      %i.fa.fa-only.fa-align-left
+    %button.btn.btn-grey{:type => "button"}
+      %i.fa.fa-only.fa-align-center
+    %button.btn.btn-grey{:type => "button"}
+      %i.fa.fa-only.fa-align-right
+  / end btn-group
+  .btn-group{"data-toggle" => "buttons-checkbox"}
+    %button.btn.btn-sm.btn-default.active{:type => "button"}
+      %i.fa.fa-only.fa-bold
+    %button.btn.btn-sm.btn-default{:type => "button"}
+      %i.fa.fa-only.fa-italic
+    %button.btn.btn-sm.btn-default{:type => "button"}
+      %i.fa.fa-only.fa-underline
+  / end btn-group
+  .btn-group
+    %button.btn.btn-lg.btn-success{:type => "button"}
+      %i.fa.fa-only.fa-heart
+    %button.btn.btn-lg.btn-success{:type => "button"}
+      %i.fa.fa-only.fa-rocket
+    %button.btn.btn-lg.btn-success{:type => "button"}
+      %i.fa.fa-only.fa-facebook
+    %button.btn.btn-lg.btn-success{:type => "button"}
+      %i.fa.fa-only.fa-star
+  / end btn-group
+/ end btn-toolbar
+.space-40
+%h2.header.smaller.lighter Button with Icons
+.btn-toolbar
+  %p
+    %button.btn.btn-default
+      %i.fa.fa-pencil
+      Default
+    %button.btn.btn-primary
+      %i.fa.fa-beaker
+      Primary
+    %button.btn.btn-info
+      Info
+      %i.fa.fa-print.fa-on-right
+    %button.btn.btn-lg.btn-success
+      %i.fa.fa-check
+      Success
+    %button.btn.btn-sm.btn-warning
+      %i.fa.fa-fire
+      Warning
+    %button.btn.btn-xs.btn-danger
+      %i.fa.fa-bolt
+      Danger
+      %i.fa.fa-arrow-right.fa-on-right
+  %p
+    %button.btn.btn-info
+      %i.fa.fa-signal.fa-3x.fa-only
+    %button.btn.btn-warning.btn-xs
+      %i.fa.fa-wrench.fa-2x.icon.-only
+    %button.btn.btn-danger.btn-sm
+      %i.fa.fa-reply.fa-2x.fa-only
+    %button.btn.btn-grey.btn-lg
+      %i.fa.fa-trash-o.fa-4x.fa-only

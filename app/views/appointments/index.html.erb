@@ -1,0 +1,48 @@
+<div class="pageheader">
+  <h2>Appointments</h2>
+  <%= link_to 'New Appointment', new_appointment_path %>
+    <div class="mapcontainer">
+      <div class="maphead">
+        <div class="row">
+          <div class="col-md-4">
+            <h2><strong><p> Title </p></strong></h2>
+          </div>
+          <div class="col-md-4">    
+            <h2><strong><p> Address </p></strong></h2>
+          </div>
+          <div class="col-md-4">
+            <h2><strong><p> Date </p></strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <% @appointments.each do |appointment| %>
+          <div class="col-md-4">
+            <%= link_to "#{appointment.title}", appointment_path(appointment) %>
+          </div>
+          <div class="col-md-4">  
+            <%= appointment.address %>
+          </div>
+          <div class="col-md-4">  
+            <%= appointment.date %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <div style='width: 600px;'>
+    <div id="map" style='width: 600px; height: 300px;'></div>
+  </div>
+  </div>
+</div>
+  <br>
+
+  
+
+  <script type="text/javascript">
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  })
+  </script>

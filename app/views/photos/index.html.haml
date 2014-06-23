@@ -1,0 +1,8 @@
+.pageheader
+  %h2 Photo Album
+  =link_to "Add Picture", new_photo_path
+  %hr
+  - @photos.each do |photo|
+    = link_to photo_path(photo) do
+      = image_tag photo.image.url(:thumb)
+  

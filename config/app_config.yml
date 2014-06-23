@@ -1,0 +1,19 @@
+defaults: &defaults
+  twitter:
+    clientId: "NKuLKtyEkXVS9WboZxMBGgRpW"
+    clientSecret: "vpEhDMDU394YbUqhJF7QeA5WO788bHRSXRPnN8te5eGZT04K2U"
+  facebook:
+    clientId: "719751814733538"
+    clientSecret: "e382ae3d5cf1b070c4098ce00f4c192a"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+
+

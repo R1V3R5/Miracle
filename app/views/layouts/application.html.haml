@@ -1,0 +1,25 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width initial-scale=1", :name => "viewport"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %title My Miracle
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    / <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvCUffY0s0BHQXH0d8sUETwZQ5XBw2nbk" type="text/javascript"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body{:role => "document"}
+    .wrapper
+      .row
+        .col-md-3.sidebar 
+          =render 'layouts/navbar'  
+        .col-md-9.content    
+          - if notice || alert
+            %p.notice= notice
+            %p.alert= alert
+          = yield

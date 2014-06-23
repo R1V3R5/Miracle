@@ -1,0 +1,16 @@
+.pageheader
+  .space-40
+  %h2 Meals
+  = link_to "Add Entry", new_food_path
+  %hr
+  - @foods.each do |food|
+    .well
+      %li
+        Food-
+        = food.meal
+      %li 
+        Drink-
+        = food.created_at.try(:strftime, "%m-%d-%Y")       
+    %br
+ 
+  

@@ -1,0 +1,33 @@
+.row 
+  .col-md-8
+    %h3 #{@appointment.title}
+.row
+  .col-md-4
+    = @appointment.date
+    \|
+    = link_to "Edit", edit_appointment_path(@appointment)
+    = link_to "Delete", appointment_path(@appointment), method: :delete
+  .col-md-4.col-md-offset-4
+    = link_to "Back", appointments_path
+%hr
+%br
+  %strong Latitude:
+  = @appointment.latitude
+%br
+  %strong Longitude:
+  = @appointment.longitude
+%br
+  %strong Address:
+  = @appointment.address
+%br
+  %strong City:
+  = @appointment.city
+%br
+  %strong State:
+  = @appointment.state
+%br
+  %strong Zip:
+  = @appointment.zip
+%br
+  %strong Phone Number
+  = @appointment.phone

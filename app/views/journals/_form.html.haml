@@ -1,0 +1,8 @@
+.pageheader
+  = simple_form_for @journal do |f|
+    .form-inputs
+      = f.text_field :title, placeholder: 'TITLE', style: "width:300px;"
+    .ckeditor
+      = f.text_area :content, :class => 'ckeditor'
+    .form-actions
+      = f.submit

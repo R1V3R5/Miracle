@@ -1,0 +1,7 @@
+.pageheader
+  = simple_form_for @photo do |f|
+    .form-inputs
+      = f.text_field :title, placeholder: "Title", style: "width:300px;margin: 0 auto;"
+      = f.file_field :image
+    .form-actions
+      = f.submit

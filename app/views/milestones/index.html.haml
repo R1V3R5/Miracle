@@ -1,0 +1,7 @@
+.pageheader
+  .space-40
+  %h2 Milestone Entries
+  = link_to "Add Milestone", new_milestone_path
+  - @milestones.each do |milestone|
+    .well
+      = link_to "#{milestone.title}", milestone_path(milestone)

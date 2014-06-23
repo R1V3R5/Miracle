@@ -1,0 +1,26 @@
+<div class="pageheader">
+  <h2 class="text-center"> {{ data.currentForum.name }}</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <form class="input-group">
+        <input class="form-control ng-pristine ng-valid" id="srch-term" ng-model="searchText" placeholder="Search Comments" type="text" style="width:200px;">
+        <button type="button" class="btn btn-info" ng-click="returnHome()">Home</button>
+      </form>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row" ng-repeat="comment in data.currentForum.comments | filter:searchText" style="margin-left:5px;">
+        <li>
+          <strong> {{ comment.user_name }} </strong>-{{ comment.content }}
+        </li>
+      </div>
+    </div>
+    <div class="col-md-4-offset">
+    <form name="myForm" class="my-form">
+      <textarea ng-model="formData.newCommentContent" style="margin-left:5px;width:344px;height:100px" required></textarea>
+      <button type="button" class="btn btn-success" ng-click="createComment()"style="float:right;">Create</button>
+    </form>    
+  </div>
+</div>

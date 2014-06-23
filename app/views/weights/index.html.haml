@@ -1,0 +1,9 @@
+.pageheader
+  .space-40
+  %h2 Weight Tracker
+  = link_to "New Weight Record", new_weight_path
+  %hr
+  - @weights.each do |weight|
+    .well
+      = weight.content
+    %br

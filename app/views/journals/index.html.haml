@@ -1,0 +1,8 @@
+.pageheader
+  .space-40
+  %h2 Journal Entries
+  = link_to "Add Entry", new_journal_path
+  %hr
+  - @journals.each do |journal|
+    .well
+      = link_to "#{journal.title}", journal_path(journal)

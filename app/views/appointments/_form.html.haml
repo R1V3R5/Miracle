@@ -1,0 +1,13 @@
+.pageheader
+  %h2 New Appointment
+.form-control  
+  = form_for @appointment do |f|
+    = f.text_field :title, placeholder: "Required", required: false, placeholder: "Appointment", style: "width:300px;margin: 0 auto;"
+    = f.text_field :address, placeholder: "Required", required: false, placeholder: "Address", style: "width:300px;margin: 0 auto;"
+    = f.text_field :city, placeholder: "City", style: "width:300px;margin: 0 auto;"
+    = f.text_field :state, placeholder: "State", style: "width:300px;margin: 0 auto;"
+    = f.text_field :zip, placeholder: "Zip", style: "width:300px;margin: 0 auto;"
+    = f.text_field :phone, placeholder: "Phone", style: "width:300px;margin: 0 auto;"
+    = f.text_field :date, placeholder: "Required", required: false, placeholder: "Date", style: "width:300px;margin: 0 auto;"
+
+    = f.submit

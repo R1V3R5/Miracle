@@ -1,0 +1,12 @@
+
+= form_for @wish do |f|
+  .form-inputs
+    - @groups.each do |group|
+      %strong #{group.title}
+      %br
+      - group.group_items.each do |group_item|
+        = check_box_tag 'wish[group_item_ids][]', group_item.id, false, {id: "group_item_id_#{group_item.id}"}
+        = label_tag "group_item_id_#{group_item.id}", group_item.title
+        %br
+  .form-actions
+    = f.submit "Submit"
