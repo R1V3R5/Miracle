@@ -1,6 +1,7 @@
 .pageheader
   = simple_form_for @milestone do |f|
     .form-inputs
-      = f.text_field :title, placeholder: 'TITLE', style: "width:300px;"
+      = f.text_field :title, placeholder: 'Milestone', style: "width:300px;"
+      = f.text_field :date, placeholder: 'Date', style: "width:300px;"
     .form-actions
       = f.submit

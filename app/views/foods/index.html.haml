@@ -5,12 +5,13 @@
   %hr
   - @foods.each do |food|
     .well
+      = food.created_at.try(:strftime, "%m-%d-%Y")
       %li
         Food-
         = food.meal
       %li 
         Drink-
-        = food.created_at.try(:strftime, "%m-%d-%Y")       
+        = food.drink        
     %br
  
   

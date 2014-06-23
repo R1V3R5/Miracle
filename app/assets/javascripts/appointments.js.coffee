@@ -8,3 +8,7 @@ $ ->
 $ ->
   $("#user_due_date").datepicker()
   return
+
+$ ->
+  $("#milestone_date").datepicker()
+  return
